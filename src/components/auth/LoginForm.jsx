@@ -1,6 +1,6 @@
+import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useContext, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
 import { AuthContext } from '../../context/AuthContext';
 import Alert from '../common/Alert';
@@ -30,7 +30,7 @@ const LoginForm = () => {
     try {
       setIsSubmitting(true);
       setError('');
-      
+
       await login(values);
       navigate('/tickets');
     } catch (err) {
@@ -47,7 +47,7 @@ const LoginForm = () => {
       </div>
       <div className="card-body">
         {error && <Alert type="danger" message={error} />}
-        
+
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -66,7 +66,7 @@ const LoginForm = () => {
                 />
                 <ErrorMessage name="email" component="div" className="text-danger" />
               </div>
-              
+
               <div className="form-group">
                 <label htmlFor="password">Password</label>
                 <Field
@@ -78,7 +78,7 @@ const LoginForm = () => {
                 />
                 <ErrorMessage name="password" component="div" className="text-danger" />
               </div>
-              
+
               <div className="form-group">
                 <button
                   type="submit"
@@ -91,11 +91,26 @@ const LoginForm = () => {
             </Form>
           )}
         </Formik>
-        
-        <div className="text-center mt-2">
-          <p>
-            Don't have an account? <Link to="/register">Register</Link>
-          </p>
+
+        <div className="text-center mt-3">
+          <h5>Test Credentials</h5>
+          <div className="credentials-container">
+            <div className="credential-item">
+              <strong>Customer:</strong>
+              <div>Email: customer@example.com</div>
+              <div>Password: password123</div>
+            </div>
+            <div className="credential-item">
+              <strong>Admin:</strong>
+              <div>Email: admin@example.com</div>
+              <div>Password: password123</div>
+            </div>
+            <div className="credential-item">
+              <strong>Agent:</strong>
+              <div>Email: agent@example.com</div>
+              <div>Password: password123</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

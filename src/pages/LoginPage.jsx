@@ -10,13 +10,6 @@ const LoginPage = () => {
           <p>Customer Support System</p>
         </div>
         <LoginForm />
-        <div className="test-accounts">
-          <p>
-            <a href="/test-accounts.html" target="_blank" rel="noopener noreferrer">
-              Use test accounts
-            </a>
-          </p>
-        </div>
       </div>
     </div>
   );
