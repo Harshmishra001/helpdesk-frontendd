@@ -1,0 +1,128 @@
+/* App specific styles */
+
+/* Auth Pages */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+}
+
+/* Dashboard */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Tickets */
+.tickets-list {
+  margin-top: 1rem;
+}
+
+.ticket-item {
+  margin-bottom: 1rem;
+}
+
+.ticket-header {
+  margin-bottom: 0.5rem;
+}
+
+.ticket-footer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--gray-color);
+}
+
+.ticket-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Ticket Detail */
+.ticket-detail {
+  margin-top: 1rem;
+}
+
+.ticket-actions {
+  margin-top: 1rem;
+}
+
+.notes-section {
+  margin-top: 1rem;
+}
+
+.notes-title {
+  margin-bottom: 1rem;
+}
+
+.notes-list {
+  margin-bottom: 1rem;
+}
+
+.note-item {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.note-header {
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.add-note {
+  margin-top: 1rem;
+}
+
+/* Customers */
+.customers-list {
+  margin-top: 1rem;
+}
+
+.user-item {
+  margin-bottom: 1rem;
+}
+
+/* Profile */
+.profile-card {
+  margin-top: 1rem;
+  max-width: 600px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+/* Not Found & Unauthorized */
+.not-found-page,
+.unauthorized-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.not-found-content h1,
+.unauthorized-content h1 {
+  font-size: 6rem;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+.not-found-content h2,
+.unauthorized-content h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.not-found-content p,
+.unauthorized-content p {
+  margin-bottom: 2rem;
+  color: var(--gray-color);
+}

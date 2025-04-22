@@ -1,0 +1,44 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--light-color);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.auth-logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-logo h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.auth-logo p {
+  color: var(--gray-color);
+}
+
+.test-accounts {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+}
+
+.test-accounts a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.test-accounts a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpdesk Test Accounts</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #3498db;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .role {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .admin {
+            background-color: #e74c3c;
+        }
+        .agent {
+            background-color: #3498db;
+        }
+        .customer {
+            background-color: #2ecc71;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Helpdesk Test Accounts</h1>
+    
+    <div class="card">
+        <h2>Quick Access Links</h2>
+        <p>Click on any of these links to automatically log in with the corresponding test account:</p>
+        
+        <p>
+            <span class="role admin">Admin</span>
+            <a href="http://localhost:5174/?testAccount=admin@example.com" class="btn">Login as Admin</a>
+        </p>
+        
+        <p>
+            <span class="role agent">Agent</span>
+            <a href="http://localhost:5174/?testAccount=agent@example.com" class="btn">Login as Agent</a>
+        </p>
+        
+        <p>
+            <span class="role customer">Customer</span>
+            <a href="http://localhost:5174/?testAccount=customer@example.com" class="btn">Login as Customer</a>
+        </p>
+    </div>
+    
+    <div class="card">
+        <h2>Account Details</h2>
+        <p>These test accounts can be used with any password:</p>
+        
+        <ul>
+            <li><strong>Admin:</strong> admin@example.com</li>
+            <li><strong>Agent:</strong> agent@example.com</li>
+            <li><strong>Customer:</strong> customer@example.com</li>
+        </ul>
+        
+        <p>Password: <code>password123</code> (or any password)</p>
+    </div>
+    
+    <div class="card">
+        <h2>Features by Role</h2>
+        
+        <h3><span class="role admin">Admin</span> Features:</h3>
+        <ul>
+            <li>Access to Dashboard with statistics</li>
+            <li>View and manage all tickets</li>
+            <li>View and manage all users</li>
+            <li>Create new users</li>
+            <li>Update ticket status</li>
+            <li>Add notes to tickets</li>
+        </ul>
+        
+        <h3><span class="role agent">Agent</span> Features:</h3>
+        <ul>
+            <li>View all tickets</li>
+            <li>Update ticket status</li>
+            <li>Add notes to tickets</li>
+            <li>View customer information</li>
+        </ul>
+        
+        <h3><span class="role customer">Customer</span> Features:</h3>
+        <ul>
+            <li>View own tickets</li>
+            <li>Create new tickets</li>
+            <li>Add notes to own tickets</li>
+        </ul>
+    </div>
+    
+    <div class="card">
+        <h2>Notes</h2>
+        <p>This is a demo application with mock data. Changes will not persist between sessions.</p>
+        <p>For testing purposes, the application uses localStorage to simulate a backend.</p>
+    </div>
+</body>
+</html>
